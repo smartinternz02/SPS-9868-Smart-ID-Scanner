@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Upload Image</title>
+   <link rel="stylesheet"  type="text/css" href="static/css/file.css">
+   
+ </head>
+ <body>
+ 
+ <nav id="primary-nav" class="primary-nav" role="navigation">
+			<ul id="menu-truck-main-menu" class="menu gd-menu-z"><li id="menu-item-25296" class="tpa-menu-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-25295 current_page_item menu-item-has-children menu-item-25296"><a href="{{ url_for('home') }}">Home</a>
+
+<li id="menu-item-25241" class="tpa-top-level-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25241"><a href="{{ url_for('filehtml') }}">Upload Again</a>
+
+	
+
+<li id="menu-item-25240" class="tpa-top-level-menu-logout menu-item menu-item-type- menu-item-object-logout menu-item-25240"><a href="{{ url_for('logout') }}">Logout</a></li>
+     
+        
+        
+        </ul>		</nav>
+
+ 
+
+  
+  
+   <h1>Upload Image</h1>
+  
+   <form action='fileupload' method=post enctype=multipart/form-data>
+     <p><input type=file name=file>
+        <input type=submit value=Upload>
+   </form>
+
+  
+ </body>
+</html>
